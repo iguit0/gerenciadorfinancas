@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "G drive clone backend",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "mkdir -p downloads && node src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch --runInBand",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --runInBand --coverage"
+  },
+  "devDependencies": {
+    "jest": "^27.1.1"
+  },
+  "dependencies": {
+    "pino": "^6.13.2",
+    "pino-pretty": "^7.0.0",
+    "pretty-bytes": "^5.6.0",
+    "socket.io": "^4.2.0"
+  }
+}
